@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Wars Crawl</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="stars"></canvas>
+
+  <div class="container">
+    <div class="title-section">
+      <h1 class="title">STAR WARS</h1>
+      <p class="subtitle">Eine weit entfernte Galaxie</p>
+    </div>
+
+    <button id="startBtn">CRAWL STARTEN</button>
+
+    <div class="crawl-wrapper" id="crawlWrapper">
+      <div class="crawl-content" id="crawlContent">
+        <div class="episode-number" id="episodeNumber"></div>
+        <div class="episode-title" id="episodeTitle"></div>
+        <div class="crawl-text" id="crawlText"></div>
+      </div>
+    </div>
+
+    <div class="controls" id="controls">
+      <button id="prevBtn">← Zurück</button>
+      <span id="episodeIndicator">1 / 3</span>
+      <button id="nextBtn">Weiter →</button>
+    </div>
+
+    <div class="attribution">
+      Episode-Auswahl &bull; Klicke auf Weiter
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
