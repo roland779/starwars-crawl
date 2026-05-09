@@ -24,6 +24,37 @@ canvas#stars {
   z-index: 0;
 }
 
+.language-switch {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 20;
+  display: flex;
+  gap: 0.4rem;
+  padding: 0.25rem;
+  border: 1px solid rgba(255, 215, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.language-option {
+  min-width: 2.6rem;
+  min-height: 2rem;
+  padding: 0.35rem 0.6rem;
+  border: 0;
+  background: transparent;
+  color: #ffd700;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08rem;
+}
+
+.language-option:hover,
+.language-option.active {
+  background: #ffd700;
+  color: #000;
+}
+
 .container {
   position: relative;
   z-index: 1;

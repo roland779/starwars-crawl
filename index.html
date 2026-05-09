@@ -9,13 +9,18 @@
 <body>
   <canvas id="stars"></canvas>
 
+  <div class="language-switch" aria-label="Language selection">
+    <button class="language-option active" type="button" data-lang="de" aria-pressed="true">DE</button>
+    <button class="language-option" type="button" data-lang="en" aria-pressed="false">EN</button>
+  </div>
+
   <div class="container">
     <div class="title-section">
       <h1 class="title">STAR WARS</h1>
-      <p class="subtitle">Eine weit entfernte Galaxie</p>
+      <p class="subtitle" id="pageSubtitle"></p>
     </div>
 
-    <button id="startBtn">CRAWL STARTEN</button>
+    <button id="startBtn"></button>
 
     <div class="crawl-wrapper" id="crawlWrapper">
       <div class="crawl-content" id="crawlContent">
@@ -26,14 +31,12 @@
     </div>
 
     <div class="controls" id="controls">
-      <button id="prevBtn">← Zurück</button>
+      <button id="prevBtn"></button>
       <span id="episodeIndicator">1 / 3</span>
-      <button id="nextBtn">Weiter →</button>
+      <button id="nextBtn"></button>
     </div>
 
-    <div class="attribution">
-      Episode-Auswahl &bull; Klicke auf Weiter
-    </div>
+    <div class="attribution" id="attribution"></div>
   </div>
 
   <script src="script.js"></script>

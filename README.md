@@ -1,38 +1,97 @@
 # Star Wars Crawl
 
-Eine kleine statische HTML/CSS/JavaScript-Seite mit animiertem Sternenhintergrund und Star-Wars-artigem Textcrawl.
+## Deutsch
 
-## Starten
+Eine kleine statische HTML/CSS/JavaScript-Seite mit animiertem Sternenhintergrund und Star-Wars-artigem Textcrawl. Die Oberflaeche und Crawl-Texte sind auf Deutsch und Englisch verfuegbar.
+
+### Starten
 
 Die Seite braucht keinen Webserver.
 
 1. Oeffne den Projektordner.
 2. Doppelklicke auf `index.html`.
-3. Klicke im Browser auf `CRAWL STARTEN`.
+3. Waehle oben rechts `DE` oder `EN`.
+4. Klicke im Browser auf `CRAWL STARTEN`.
 
-## Dateien
+### Dateien
 
-- `index.html` - Grundgeruest der Seite
+- `index.html` - Grundgeruest der Seite und Sprachumschalter
 - `styles.css` - Layout, Farben und Crawl-Animation
-- `script.js` - Sternenhintergrund, Navigation und Episoden-Texte
-- `crawl.json` - alte externe Datenquelle, wird aktuell nicht mehr geladen
+- `script.js` - Sternenhintergrund, Navigation, UI-Texte und Episoden-Texte
+- `crawl.json` - alte externe Datenquelle, jetzt ebenfalls zweisprachig als Referenz
+- `LICENSE` - MIT-Lizenz
 
-## Texte Bearbeiten
+### Texte Bearbeiten
 
-Die Crawl-Texte stehen direkt in `script.js` im Array `episodes`.
+Die aktiven Crawl-Texte stehen direkt in `script.js` im Array `episodes`.
 
-Ein Eintrag sieht so aus:
+Ein Eintrag enthaelt beide Sprachen:
 
 ```js
 {
-  title: 'Episode I',
-  subtitle: 'DER ANFANG',
-  text: 'Dein Crawl-Text...'
+  de: {
+    title: 'Episode I',
+    subtitle: 'DER ANFANG',
+    text: 'Dein deutscher Crawl-Text...'
+  },
+  en: {
+    title: 'Episode I',
+    subtitle: 'THE BEGINNING',
+    text: 'Your English crawl text...'
+  }
 }
 ```
 
 Neue Episoden koennen dort als weitere Objekte ergaenzt werden. Der Zaehler unten passt sich automatisch an.
 
-## Lizenz
+### Lizenz
 
 Dieses Projekt steht unter der MIT-Lizenz. Details stehen in `LICENSE`.
+
+## English
+
+A small static HTML/CSS/JavaScript page with an animated starfield and a Star-Wars-style text crawl. The interface and crawl text are available in German and English.
+
+### Start
+
+The page does not need a web server.
+
+1. Open the project folder.
+2. Double-click `index.html`.
+3. Choose `DE` or `EN` in the top-right corner.
+4. Click `START CRAWL` in the browser.
+
+### Files
+
+- `index.html` - Page structure and language switcher
+- `styles.css` - Layout, colors, and crawl animation
+- `script.js` - Starfield, navigation, UI text, and episode text
+- `crawl.json` - old external data source, now also bilingual as a reference
+- `LICENSE` - MIT license
+
+### Editing Text
+
+The active crawl text lives directly in `script.js` in the `episodes` array.
+
+Each entry contains both languages:
+
+```js
+{
+  de: {
+    title: 'Episode I',
+    subtitle: 'DER ANFANG',
+    text: 'Dein deutscher Crawl-Text...'
+  },
+  en: {
+    title: 'Episode I',
+    subtitle: 'THE BEGINNING',
+    text: 'Your English crawl text...'
+  }
+}
+```
+
+New episodes can be added as more objects in that array. The counter updates automatically.
+
+### License
+
+This project is available under the MIT License. See `LICENSE` for details.
