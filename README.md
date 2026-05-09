@@ -16,14 +16,14 @@ Die Seite braucht keinen Webserver.
 ### Dateien
 
 - `index.html` - Grundgeruest der Seite und Sprachumschalter
-- `styles.css` - Layout, Farben und Crawl-Animation
-- `script.js` - Sternenhintergrund, Navigation, UI-Texte und Episoden-Texte
-- `crawl.json` - alte externe Datenquelle, jetzt ebenfalls zweisprachig als Referenz
+- `css/styles.css` - Layout, Farben und Crawl-Animation
+- `js/script.js` - Sternenhintergrund, Navigation, UI-Texte und Episoden-Texte
+- `data/crawl.json` - alte externe Datenquelle, jetzt ebenfalls zweisprachig als Referenz
 - `LICENSE` - MIT-Lizenz
 
 ### Texte Bearbeiten
 
-Die aktiven Crawl-Texte stehen direkt in `script.js` im Array `episodes`.
+Die aktiven Crawl-Texte stehen direkt in `js/script.js` im Array `episodes`.
 
 Ein Eintrag enthaelt beide Sprachen:
 
@@ -64,14 +64,14 @@ The page does not need a web server.
 ### Files
 
 - `index.html` - Page structure and language switcher
-- `styles.css` - Layout, colors, and crawl animation
-- `script.js` - Starfield, navigation, UI text, and episode text
-- `crawl.json` - old external data source, now also bilingual as a reference
+- `css/styles.css` - Layout, colors, and crawl animation
+- `js/script.js` - Starfield, navigation, UI text, and episode text
+- `data/crawl.json` - old external data source, now also bilingual as a reference
 - `LICENSE` - MIT license
 
 ### Editing Text
 
-The active crawl text lives directly in `script.js` in the `episodes` array.
+The active crawl text lives directly in `js/script.js` in the `episodes` array.
 
 Each entry contains both languages:
 
