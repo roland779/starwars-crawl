@@ -32,3 +32,7 @@ Ein Eintrag sieht so aus:
 ```
 
 Neue Episoden koennen dort als weitere Objekte ergaenzt werden. Der Zaehler unten passt sich automatisch an.
+
+## Lizenz
+
+Dieses Projekt steht unter der MIT-Lizenz. Details stehen in `LICENSE`.
